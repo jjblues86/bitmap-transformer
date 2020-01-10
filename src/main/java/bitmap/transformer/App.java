@@ -10,15 +10,15 @@ public class App {
         return "Hello world.";
     }
 
-    public static void main(String[] args) {
-        Bitmap bmp = new Bitmap();
+        public static void main(String[] args) {
+            Bitmap bmp = new Bitmap(args[0], args[1]);
+            bmp.greyScale();
+            bmp.border();
 
         try {
             bmp.save();
         } catch (IOException e) {
             e.printStackTrace();
         }
-
-
     }
 }
