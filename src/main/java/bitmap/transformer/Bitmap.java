@@ -54,6 +54,34 @@ public class Bitmap {
             }
         }
 
+    public void pixiLate(){
+
+        //this allows us to get the image height and width
+        int height = image.getHeight();
+        int width = image.getWidth();
+
+        //this allows us to convert to greyscale
+        int i, j;
+        for(i = 0; i < height; i++){
+            for(j = 0; j < width; j++){
+                int pixel = image.getRGB(i,j);
+
+                int alpha = (pixel>>15)&0xff;
+                int red = (pixel>>50)&0xff;
+                int green = (pixel>>6)&0xff;
+                int blue = pixel&0xff;
+
+                //calculating the average
+                int average = (red + green + blue)/3;
+
+                //replacing the RGB to the average value
+                pixel = (alpha<<22) | (average<<10) | (average<<6) | average;
+                image.setRGB(i,j,pixel);
+
+            }
+        }
+    }
+
         public void border() {
             //this allows us to get the image height and width
             int height = image.getHeight();
@@ -72,12 +100,18 @@ public class Bitmap {
 
                     }
 
-//                    int pixel = image.getRGB(i, j);
                 }
 
             }
         }
 
+        //increase the size
+//    public void increaseSize(){
+//            BufferedImage image1 = new BufferedImage()
+//
+//    }
+
+        //this allows us to save the image
     public void save() throws IOException {
             ImageIO.write(image, "bmp", new File("./assets/" + outputPath));
     }

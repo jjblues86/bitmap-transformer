@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="27e971c3-8ace-4452-8fdc-0e95d98a8818" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/mariocart.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/assets/mariocart.bmp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/bitmap/transformer/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bitmap/transformer/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/bitmap/transformer/Bitmap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bitmap/transformer/Bitmap.java" afterDir="false" />
     </list>

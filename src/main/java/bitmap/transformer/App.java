@@ -14,6 +14,7 @@ public class App {
             Bitmap bmp = new Bitmap(args[0], args[1]);
             bmp.greyScale();
             bmp.border();
+            bmp.pixiLate();
 
         try {
             bmp.save();
